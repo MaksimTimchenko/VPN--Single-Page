@@ -641,6 +641,7 @@ color: #0B132A;
 @media (max-width:767px) {
     .container {
       max-width: none;
+      overflow-x: hidden;
     }
 
     .header-burger {
@@ -789,6 +790,58 @@ color: #0B132A;
 
     .companies_block{ 
         display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
   }
+
+  @media (max-width: 420px){
+    .main_descriotion {
+        max-width: 382px;
+    }
+    .main_title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .content_logo img {
+        width: 382px;
+  }
+
+  .content_info {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.info {
+    height: 200px;
+    border-right: none;
+    border-bottom: 2px solid #EEEFF2;
+}
+
+.info:nth-child(2) {
+    border-right:none;
+}
+
+.content_info_secondary{
+    max-width: 382px;
+}
+
+.description_block_3{
+    margin: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;  
+     
+}
+
+.title_slider_info{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+}
