@@ -598,6 +598,9 @@ color: #0B132A;
     overflow-x: hidden  ;
   }
   
+  .content_block_1 {
+    margin-top: 0;
+  }
 
   .content_info {
     box-shadow: none;
@@ -618,11 +621,174 @@ color: #0B132A;
     .container {
       max-width: 750px;
     }
-    
+
+    .nav_menu ul li a{
+        margin-left: 10px;
+    }
+
+    .button{
+        padding: 8px 30px;
+
+    }
+    .btn_sign_in {
+        margin-right: 20px;
+    }
+    .main {
+        margin-top: 120px;
+    }
   }
 
-@media (max-width:767) {
+@media (max-width:767px) {
     .container {
       max-width: none;
+    }
+
+    .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-top: 8px;
+        margin-right: 10px;
+        z-index: 5;
+    }
+
+    .header-burger::before,
+    .header-burger::after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: .5s ease-in-out;
+    }
+
+    .header-burger.activeBurger::before {
+        transform: rotate(45deg);
+        top:  9px;
+    }
+    .header-burger.activeBurger::after {
+        transform: rotate(-45deg);
+       bottom: 9px;
+    }
+    .header-burger.activeBurger span {
+        transform: scale(0);
+    }
+
+    .header-burger span {
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        left: 0;
+        height: 3px;
+        top: 9px;
+        transition: .5s ease-in-out;
+    }
+
+    .header-burger::before {
+        top: 0;
+    }
+
+    .header-burger::after{
+        bottom: 0;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        z-index: 2;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(139, 133, 133,.9);
+        transition: .8s ease-in-out;
+    }
+
+    .registration {
+        position: fixed;
+        left: 0;
+        top: -100%;
+    }
+
+    .registration.activeBurger {
+        top: 0
+        
+
+    }
+    .nav_menu.activeBurger {
+        top: 0;
+    }
+
+    .nav_menu ul {
+      
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+        
+    }
+    .nav_menu ul li {
+        padding: 20px;
+    }
+
+    .nav_menu ul li a {
+        margin: 0;
+        font-size: 32px;
+        
+    }
+
+    .nav-btn {
+        margin-top: 40px;
+        background-color: rgba(28,28,28, .8);
+    }
+
+    .content_block_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .main_title {
+        text-align: center;
+    }
+
+    .description_text {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .main_descriotion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content_info {
+        margin-top: 70px;
+    }
+
+    .content_block-inner {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 30px 0px;
+    }
+
+    .cards {
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .content_block_4 {
+        margin-top: 40px;
+    }
+
+    .companies_block{ 
+        display: flex;
+    flex-wrap: wrap;
     }
   }

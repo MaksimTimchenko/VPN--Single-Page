@@ -87,3 +87,11 @@ prev.addEventListener('click', () => {
    }
 });
 
+// burger 
+const burgerBtn = document.querySelector('.header-burger'),
+      navMenu = document.querySelector('.nav_menu');
+
+burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('activeBurger')
+    navMenu.classList.toggle('activeBurger')
+})     
