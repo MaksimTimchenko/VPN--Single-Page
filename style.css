@@ -644,6 +644,7 @@ color: #0B132A;
       overflow-x: hidden;
     }
 
+
     .header-burger {
         display: block;
         position: relative;
@@ -779,6 +780,9 @@ color: #0B132A;
         margin: 30px 0px;
     }
 
+    .cards_list  li{
+        list-style: none;
+    }
     .cards {
         padding: 0 10px;
         gap: 10px;
@@ -807,6 +811,10 @@ color: #0B132A;
         width: 382px;
   }
 
+  .logo_secondary img {
+    width: 382px;
+  }
+
   .content_info {
     flex-direction: column;
     justify-content: center;
@@ -819,9 +827,14 @@ color: #0B132A;
     border-bottom: 2px solid #EEEFF2;
 }
 
+.info:nth-child(1) {
+    border-right: none;
+}
 .info:nth-child(2) {
     border-right:none;
+    margin-left: 5px;
 }
+
 
 .content_info_secondary{
     max-width: 382px;
